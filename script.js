@@ -289,10 +289,11 @@ inputText.addEventListener('keydown',(e)=>{
             const addElement = createItemTodo(e.target.value);
             const send = sendToLocalStorage(todos);
             if(lang=='fa'){
-                toastShow('خطایی رخ دادە است', 'red');
+                toastShow('آیتم با موفقیت اضافه شد', 'green');
             }else{
-                toastShow('An error occurred.', 'red');
+                toastShow('Item added successfully.', 'green');
             }
+            
         }
     }
 })
